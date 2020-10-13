@@ -1,4 +1,5 @@
-﻿using System.Collections.Concurrent;
+﻿using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Reflection;
@@ -6,13 +7,7 @@ using System.Threading;
 
 namespace libTracer
 {
-    public interface ITracer
-    {
-        void StartTrace();
-        void StopTrace();
-        TraceResult GetTraceResult();
-    }
-
+    [Serializable]
     public class TraceResult
     {
         public List<ThreadInfo> Threads { get; internal set; }        
