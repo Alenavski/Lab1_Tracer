@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
+﻿using System.Threading;
 using libTracer;
 
 namespace Lab1_Tracer
@@ -13,7 +8,6 @@ namespace Lab1_Tracer
         static void Main(string[] args)
         {
             Tracer tr = new Tracer();
-            tr.StartTrace();
 
             Foo f = new Foo(tr);
             f.MyMethod();
@@ -23,10 +17,13 @@ namespace Lab1_Tracer
             th2.Start();
             th2.Join();
 
-            tr.StopTrace();
             TraceResult trR = tr.GetTraceResult();
-            
-            Console.ReadLine();
+
+            ConsoleWritter consoleWritter = new ConsoleWritter();
+            Json_Serializer json = new Json_Serializer();
+            consoleWritter.Write(json.Serialize(trR));
+            Xml_Serializer xml = new Xml_Serializer();
+            consoleWritter.Write(xml.Serialize(trR));
         }
     }
 

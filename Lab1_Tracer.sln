@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab1_Tracer", "Lab1_Tracer\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "libTracer", "libTracer\libTracer.csproj", "{A0D889FB-8EFB-4CF1-9068-26761D1B9883}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{23F8AB72-78CB-4402-BFAE-79B8F2ABD3C5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "libTracer.Tests", "libTracer.Tests\libTracer.Tests.csproj", "{C4C01015-11C7-497D-A665-E2AD190BFA30}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{A0D889FB-8EFB-4CF1-9068-26761D1B9883}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0D889FB-8EFB-4CF1-9068-26761D1B9883}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0D889FB-8EFB-4CF1-9068-26761D1B9883}.Release|Any CPU.Build.0 = Release|Any CPU
-		{23F8AB72-78CB-4402-BFAE-79B8F2ABD3C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{23F8AB72-78CB-4402-BFAE-79B8F2ABD3C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{23F8AB72-78CB-4402-BFAE-79B8F2ABD3C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{23F8AB72-78CB-4402-BFAE-79B8F2ABD3C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4C01015-11C7-497D-A665-E2AD190BFA30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4C01015-11C7-497D-A665-E2AD190BFA30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4C01015-11C7-497D-A665-E2AD190BFA30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4C01015-11C7-497D-A665-E2AD190BFA30}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

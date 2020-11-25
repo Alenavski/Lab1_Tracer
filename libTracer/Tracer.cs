@@ -11,20 +11,21 @@ namespace libTracer
     public class TraceResult
     {
         public List<ThreadInfo> Threads { get; internal set; }        
+        
     }
 
     public class ThreadInfo
     {
-        public int IdThread { get; internal set; }
-        public double Time { get; internal set; }
-        public List<MethodInfo> Method { get; internal set; }
+        public int IdThread { get; set; }
+        public double Time { get; set; }
+        public List<MethodInfo> Method { get; set; }
     }
 
     public class MethodInfo
     {
-        public string Name { get; internal set; }
-        public string Class { get; internal set; }
-        public double Time { get; internal set; }
+        public string Name { get; set; }
+        public string Class { get; set; }
+        public double Time { get; set; }
         public List<MethodInfo> ChildMethods { get; internal set; }
 
     }
