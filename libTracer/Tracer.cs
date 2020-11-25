@@ -4,28 +4,37 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Reflection;
 using System.Threading;
+using System.Xml.Serialization;
 
 namespace libTracer
 {
-    [Serializable]
+    [XmlRoot("root")]
     public class TraceResult
     {
+        [XmlElement(ElementName = "thread")]
         public List<ThreadInfo> Threads { get; internal set; }        
         
     }
 
     public class ThreadInfo
     {
+        [XmlAttribute("id")]
         public int IdThread { get; set; }
+        [XmlAttribute("time")]
         public double Time { get; set; }
+        [XmlElement(ElementName = "method")]
         public List<MethodInfo> Method { get; set; }
     }
 
     public class MethodInfo
     {
+        [XmlAttribute("name")]
         public string Name { get; set; }
+        [XmlAttribute("class")]
         public string Class { get; set; }
+        [XmlAttribute("time")]
         public double Time { get; set; }
+        [XmlElement(ElementName = "method")]
         public List<MethodInfo> ChildMethods { get; internal set; }
 
     }
